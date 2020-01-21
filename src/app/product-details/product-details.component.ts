@@ -13,7 +13,7 @@ export class ProductDetailsComponent implements OnInit {
 
  product;
 
-  constructor(private route: ActivatedRoute,){}
+  constructor(private route: ActivatedRoute, private cartService: CartService){}
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
